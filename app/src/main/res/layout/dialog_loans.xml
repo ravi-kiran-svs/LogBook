@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_xyz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="XYZ"
+        android:textColor="@color/colortext"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_sign"
+        app:layout_constraintEnd_toEndOf="@+id/tv_amount"
+        app:layout_constraintTop_toTopOf="@+id/sp_sign" />
+
+    <TextView
+        android:id="@+id/tv_you"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You"
+        android:textColor="@color/colortext"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_sign"
+        app:layout_constraintEnd_toEndOf="@+id/et_amount"
+        app:layout_constraintTop_toTopOf="@+id/sp_sign" />
+
+    <Spinner
+        android:id="@+id/sp_sign"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toStartOf="@+id/tv_you"
+        app:layout_constraintStart_toStartOf="@+id/et_amount"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/et_amount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/tv_amount"
+        app:layout_constraintTop_toBottomOf="@+id/sp_sign" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:text="Amount"
+        android:textColor="@color/colortext"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/et_amount"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/et_amount" />
+
+    <TextView
+        android:id="@+id/tv_for"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="For"
+        android:textColor="@color/colortext"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/sp_for"
+        app:layout_constraintEnd_toEndOf="@+id/tv_amount"
+        app:layout_constraintTop_toTopOf="@+id/sp_for" />
+
+    <Spinner
+        android:id="@+id/sp_for"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="@+id/et_amount"
+        app:layout_constraintStart_toStartOf="@+id/et_amount"
+        app:layout_constraintTop_toBottomOf="@+id/et_amount" />
+
+    <TextView
+        android:id="@+id/tv_error"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="8dp"
+        android:text="(error)"
+        android:textColor="@color/wrongText"
+        app:layout_constraintBottom_toBottomOf="@+id/et_amount"
+        app:layout_constraintEnd_toEndOf="@+id/et_amount"
+        app:layout_constraintTop_toTopOf="@+id/et_amount" />
+</android.support.constraint.ConstraintLayout>

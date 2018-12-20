@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ravikiran.logbook.MainActivity"
+    tools:layout_editor_absoluteY="81dp">
+
+    <Button
+        android:id="@+id/b_MB"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/circular_button"
+        android:elevation="0dp"
+        app:layout_constraintEnd_toStartOf="@+id/b_exp"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b_loans"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/b_loans"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toBottomOf="@+id/b_MB"
+        app:layout_constraintEnd_toStartOf="@+id/b_MB"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/b_MB" />
+
+    <Button
+        android:id="@+id/b_exp"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/rounded_corners"
+        app:layout_constraintBottom_toBottomOf="@+id/b_MB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/b_MB"
+        app:layout_constraintTop_toTopOf="@+id/b_MB" />
+
+    <ListView
+        android:id="@+id/lv_shouldpay"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_MB" />
+
+    <TextView
+        android:id="@+id/tv_MB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/manage_banks"
+        android:textColor="@color/colortext"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/b_MB" />
+
+    <TextView
+        android:id="@+id/tv_loans"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/loans"
+        android:textColor="@color/colortext"
+        app:layout_constraintEnd_toEndOf="@+id/b_loans"
+        app:layout_constraintStart_toStartOf="@+id/b_loans"
+        app:layout_constraintTop_toBottomOf="@+id/b_loans" />
+
+    <TextView
+        android:id="@+id/tv_exp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/expenses"
+        android:textColor="@color/colortext"
+        app:layout_constraintEnd_toEndOf="@+id/b_exp"
+        app:layout_constraintStart_toStartOf="@+id/b_exp"
+        app:layout_constraintTop_toBottomOf="@+id/b_exp" />
+
+</android.support.constraint.ConstraintLayout>

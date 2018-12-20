@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimaryDark">#2E7D32</color>  <!-- Green-800  -->
+    <color name="colorPrimary">#66BB6A</color>      <!-- Green-400  -->
+    <color name="colorAccent">#00C853</color>       <!-- GreenA700  -->
+    <color name="colorMB">#81C784</color>           <!-- Green-300  -->
+    <color name="colorMBsecondary">#A5D6A7</color>  <!-- Green-200  -->
+    <color name="colortext">#000000</color>         <!-- Black-000  -->
+    <color name="wrongText">#C62828</color>         <!-- Red  -800  -->
+</resources>

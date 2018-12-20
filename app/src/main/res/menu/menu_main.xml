@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/add"
+        android:title="Add">
+    <menu>
+        <item android:id="@+id/add_mh"
+            android:title="Money Holder" />
+        <item android:id="@+id/add_expense"
+            android:title="Expense" />
+        <item android:id="@+id/add_friend"
+            android:title="Friend" />
+    </menu>
+    </item>
+    <item android:id="@+id/delete"
+        android:title="Delete" >
+    <menu>
+        <item android:id="@+id/del_mh"
+            android:title="Money Holder" />
+        <item android:id="@+id/del_expense"
+            android:title="Expense" />
+        <item android:id="@+id/del_friend"
+            android:title="Friend" />
+    </menu>
+    </item>
+    <item android:id="@+id/reorder"
+        android:title="Reorder">
+        <menu>
+            <item android:id="@+id/ro_mh"
+                android:title="Money Holder" />
+            <item android:id="@+id/ro_expense"
+                android:title="Expense" />
+            <item android:id="@+id/ro_friend"
+                android:title="Friend" />
+        </menu>
+    </item>
+    <item android:id="@+id/clean"
+        android:title="Clean History" />
+</menu>

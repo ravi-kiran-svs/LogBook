@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">LogBook</string>
+    <string name="manage_banks">Manage Banks</string>
+    <string name="expenses">Expenses</string>
+    <string name="loans">Loans</string>
+    <string name="MBhistory">Bank History</string>
+    <string name="exphistory">Expenses History</string>
+    <string name="loanhistory">Loan History</string>
+    <string name="addrow">Add Row</string>
+</resources>
